@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&amp;display=swap" rel="stylesheet"/>
+    <title>Portfolio</title>
+  </head>
+  <body> 
+    <div id="home">
+      <div class="navigation">
+        <nav>
+          <ul> 
+            <li><a class="nav-text bold grey-text" href="#home" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a class="nav-text bold grey-text" href="#about" onclick="toggleMobileMenu()">About me</a></li>
+            <li><a class="nav-text bold grey-text" href="#skills" onclick="toggleMobileMenu()">Skills</a></li>
+            <li><a class="nav-text bold grey-text" href="#portfolio" onclick="toggleMobileMenu()">Portfolio</a></li>
+            <li><a class="nav-text bold grey-text" href="#contacts" onclick="toggleMobileMenu()">Contacts</a></li>
+          </ul>
+        </nav>
+        <hr/>
+      </div>
+      <div class="brief-container">
+        <h1 class="brief-name bold">Denis <br> Novik</h1>
+        <p class="brief-about">UX | UI designer <br> 24 years old, Minsk</p>
+        <p class="brief-lang bold"><span class='grey-text'>RU</span> | ENG</p>
+      </div><img class="person-image non-draggable" src="assets/person.png" alt="Person"/>
+      <button class="menu-btn" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+      </button>
+      <nav class="mobile-nav"><a class="bold grey-text" href="#home" onclick="toggleMobileMenu()">Home</a><a class="bold grey-text" href="#about" onclick="toggleMobileMenu()">About me</a><a class="bold grey-text" href="#skills" onclick="toggleMobileMenu()">Skills</a><a class="bold grey-text" href="#portfolio" onclick="toggleMobileMenu()">Portfolio</a><a class="bold grey-text" href="#contacts" onclick="toggleMobileMenu()">Contacts</a>
+        <p class="mobile-lang bold"><span class='grey-text'>RU</span> | ENG</p>
+      </nav>
+    </div>
+    <div id="about">
+      <h2 class="section-name non-selectable bold pulse-anim" onclick="languageChange()">About me</h2>
+      <div class="about-info">
+        <p>Hi, I'm Denis - UX/UI designer from <br class='mobile-break'> Minsk. <br class='desktop-break'> I'm interested in design and <br class='mobile-break'> everything connected with it.</p>
+        <p>I'm studying at courses <br class='mobile-break'> "Web and mobile design <br class='desktop-break'> interfaces" <br class='mobile-break'> in IT-Academy.</p>
+        <p>Ready to implement excellent <br class='mobile-break'> projects <br class='desktop-break'> with wonderful people.</p>
+      </div>
+      <p class="updated"></p>
+    </div>
+    <div id="skills">
+      <h2 class="section-name bold">Skills</h2>
+      <p>I work in such programs as</p>
+      <div class="programs-container">
+        <div class="program"><img class="non-draggable" src="assets/icons/PS.svg" alt="Adobe Photoshop"/>
+          <p class="grey-text">Adobe Photoshop</p>
+          <div class="rating"><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star faded non-draggable" src="assets/icons/Star.svg" alt="Star"/>
+          </div>
+        </div>
+        <div class="program"><img class="non-draggable" src="assets/icons/AI.svg" alt="Adobe Illustrator"/>
+          <p class="grey-text">Adobe Illustrator</p>
+          <div class="rating"><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star faded non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star faded non-draggable" src="assets/icons/Star.svg" alt="Star"/>
+          </div>
+        </div>
+        <div class="program"><img class="non-draggable" src="assets/icons/AE.svg" alt="Adobe After Effects"/>
+          <p class="grey-text">Adobe After Effects</p>
+          <div class="rating"><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star faded non-draggable" src="assets/icons/Star.svg" alt="Star"/>
+          </div>
+        </div>
+        <div class="program"><img class="non-draggable" src="assets/icons/Figma.svg" alt="Figma"/>
+          <p class="grey-text">Figma</p>
+          <div class="rating"><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star non-draggable" src="assets/icons/Star.svg" alt="Star"/><img class="star faded non-draggable" src="assets/icons/Star.svg" alt="Star"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <h2 class="section-name bold">Portfolio</h2>
+      <div class="portfolio-templates">
+        <div class="template"><img class="non-draggable" src="assets/fashion.png" alt="Online fashion store - Homepage"/><a href="#">Online fashion store - Homepage</a></div>
+        <div class="template"><img class="non-draggable" src="assets/reebok.png" alt="Reebok Store - Concept"/><a href="#">Reebok Store - Concept</a></div>
+        <div class="template"><img class="non-draggable" src="assets/braun.png" alt="Braun Landing Page - Concept"/><a href="#">Braun Landing Page - Concept</a></div>
+      </div>
+    </div>
+    <div id="contacts">
+      <h2 class="section-name bold">Contacts</h2>
+      <p class="contacts-text">Want to know more or just chat? <br> You are welcome!</p>
+      <button type="button">Send message</button>
+      <div class="media-container">
+        <div class="media"><a href="https://www.linkedin.com" target="_blank"><img class="non-draggable" src="assets/icons/linkedin.svg" alt="https://www.linkedin.com"/></a></div>
+        <div class="media"><a href="https://www.instagram.com" target="_blank"><img class="non-draggable" src="assets/icons/instagram.svg" alt="https://www.instagram.com"/></a></div>
+        <div class="media"><a href="https://www.behance.net" target="_blank"><img class="non-draggable" src="assets/icons/behance.svg" alt="https://www.behance.net"/></a></div>
+        <div class="media"><a href="https://dribbble.com" target="_blank"><img class="non-draggable" src="assets/icons/dribble.svg" alt="https://dribbble.com"/></a></div>
+      </div>
+      <p class="comment grey-text">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+    </div>
+    <script src="script.js"> </script>
+  </body>
+</html>
