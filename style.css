@@ -11,6 +11,7 @@ html {
 
 body > div {
   padding: 100px 17.5vw;
+  transition: 0.5s;
 }
 
 .bold {
@@ -145,16 +146,19 @@ body > div {
 .mobile-nav a {
   font-size: 34px;
   text-decoration: none;
+  transition: 0.5s;
 }
 .mobile-nav a:hover {
   color: #000000;
 }
 .mobile-nav .mobile-lang {
+  margin-right: 28px;
+  margin-bottom: 237px;
+  bottom: 0;
+  right: 0;
   position: absolute;
   transform: rotate(90deg);
   font-size: 34px;
-  top: 80vh;
-  right: 6vw;
 }
 
 .brief-container {
@@ -188,6 +192,7 @@ body > div {
      object-fit: cover;
   -o-object-position: 0 40%;
      object-position: 0 40%;
+  transition: 0.5s;
 }
 
 /* About section */
@@ -281,6 +286,7 @@ body > div {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  transition: 0.5s;
 }
 .portfolio-templates img {
   margin: 20px 0 45px 0;
@@ -325,6 +331,7 @@ body > div {
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
+  transition: 0.5s;
 }
 
 .comment {
@@ -332,6 +339,7 @@ body > div {
   margin-bottom: 40px;
   font-size: 14px;
   text-align: center;
+  transition: 0.5s;
 }
 
 /* Media */
